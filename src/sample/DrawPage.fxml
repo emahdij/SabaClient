@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="255.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox fx:id="drawpage" prefHeight="490.0" prefWidth="255.0" />
+      <ImageView fitHeight="490.0" fitWidth="255.0" opacity="0.87" pickOnBounds="true">
+         <image>
+            <Image url="@back13.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="FriendRequestLabel" layoutX="12.0" layoutY="125.0" prefHeight="26.0" prefWidth="130.0" />
+      <JFXTextField fx:id="FriendRequestText" focusColor="#1f357385" labelFloat="true" layoutX="14.0" layoutY="122.0" opacity="0.91" prefHeight="24.0" prefWidth="130.0" promptText="Add contact">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#978484" />
+                  <Stop color="#899bb2cc" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="FriendRequestButton" buttonType="RAISED" layoutX="169.0" layoutY="126.0" onAction="#FriendRequest" ripplerFill="BLACK" text="Add" textAlignment="CENTER" />
+      <JFXTextField focusColor="#1f357385" labelFloat="true" layoutX="14.0" layoutY="182.0" opacity="0.91" prefHeight="24.0" prefWidth="130.0" promptText="Add Channel">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#978484" />
+                  <Stop color="#899bb2cc" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="169.0" layoutY="186.0" ripplerFill="BLACK" text="Add" textAlignment="CENTER" />
+      <JFXTextField focusColor="#1f357385" labelFloat="true" layoutX="14.0" layoutY="238.0" opacity="0.91" prefHeight="24.0" prefWidth="130.0" promptText="New group(Name)">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#978484" />
+                  <Stop color="#899bb2cc" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="169.0" layoutY="242.0" ripplerFill="BLACK" text="New" textAlignment="CENTER" />
+      <JFXTextField focusColor="#1f357385" labelFloat="true" layoutX="14.0" layoutY="307.0" opacity="0.91" prefHeight="24.0" prefWidth="130.0" promptText="New Channel(Name)">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#978484" />
+                  <Stop color="#899bb2cc" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="169.0" layoutY="311.0" ripplerFill="BLACK" text="New" textAlignment="CENTER" />
+      <JFXButton layoutX="27.0" layoutY="405.0" onAction="#logout" onMouseClicked="#logout" text="Log out" />
+      <JFXButton layoutX="27.0" layoutY="431.0" text="about us" />
+      <Label layoutX="12.0" layoutY="181.0" prefHeight="26.0" prefWidth="130.0" />
+      <Label layoutX="14.0" layoutY="241.0" prefHeight="26.0" prefWidth="130.0" />
+      <Label layoutX="12.0" layoutY="310.0" prefHeight="26.0" prefWidth="130.0" />
+      <Label fx:id="nameProfile" alignment="CENTER" layoutX="133.0" layoutY="32.0" prefHeight="26.0" prefWidth="94.0">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="numberProfile" alignment="CENTER" layoutX="133.0" layoutY="57.0" prefHeight="26.0" prefWidth="94.0">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

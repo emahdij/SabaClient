@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <VBox fx:id="loginpage" prefHeight="486.0" prefWidth="677.0">
+         <children>
+            <ImageView cache="true" fitHeight="517.0" fitWidth="678.0" mouseTransparent="true" pickOnBounds="true">
+               <image>
+                  <Image url="@back11.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+         </children></VBox>
+        <Pane layoutX="7.0" opacity="0.76" prefHeight="517.0" prefWidth="670.0">
+            <children>
+                <Pane fx:id="BackPaneLog" layoutX="100.0" layoutY="107.0" opacity="0.9" prefHeight="246.0" prefWidth="478.0" style="-fx-background-color: lightsteelblue;">
+                    <children>
+                        <Label fx:id="statuslogin" layoutX="217.0" layoutY="39.0" prefHeight="26.0" prefWidth="171.0" text="   Log in your account">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="userlogin" layoutX="219.0" layoutY="74.0" promptText="username" />
+                        <PasswordField fx:id="passlogin" layoutX="219.0" layoutY="112.0" promptText="Password" />
+                        <Button fx:id="signin" layoutX="224.0" layoutY="149.0" mnemonicParsing="false" onAction="#SighnIn" onKeyPressed="#SighnIn" prefHeight="26.0" prefWidth="72.0" text="sign in" textAlignment="CENTER">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="312.0" layoutY="149.0" mnemonicParsing="false" onAction="#SignUpPage" onKeyPressed="#SignUpPage" text="sign up" textAlignment="CENTER">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="51.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@download.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="31.0" fitWidth="79.0" layoutX="308.0" layoutY="148.0" onKeyPressed="#SignUpPage" onMouseClicked="#SignUpPage">
+                            <image>
+                                <Image url="@signup.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="31.0" fitWidth="79.0" layoutX="220.0" layoutY="149.0" onMouseClicked="#SighnIn" smooth="false">
+                            <image>
+                                <Image url="@login.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </children>
+    <effect>
+        <Blend />
+    </effect>
+</AnchorPane>
